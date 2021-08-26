@@ -22,11 +22,12 @@ ___
 
 1. Clone down this repo.
 1. Take a moment to familiarize yourself with the starter code.
-1. Decide what other components you may need.
-1. Decide what information you will pass to components as props.
+1. Decide what components you may need.
+1. Decide what information you will need pass as props to each component.
 1. Decide what the state should be (hint: state will be the information on the page that changes over time).
 1. Decide where the state should live.
 1. Write a handler function that listens for when an ingredient is clicked and updates state.
+1. When state updates we should see an ingredient added to the Burger Stack on the right side of the screen.
 
 ### Sample Idea for Component Hierarchy:
 
