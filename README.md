@@ -6,7 +6,7 @@ Here is a rough wireframe of the general layout:
 
 ![](https://i.imgur.com/beMtwGj.png)
 
-## [And here is a working demo deployed on Heroku](https://burger-stacker-706.herokuapp.com)
+## [Here is a working demo deployed on Heroku](https://burger-stacker-706.herokuapp.com)
 
 ___
 ## User Stories
@@ -22,7 +22,7 @@ ___
 
 1. Use `create-react-app` to generate a project called `burger-stacker`.
 2. Go into the newly created directory and open it up in your text editor.
-3. Clear out the generated code from the `App` component.
+3. Clear out the boilerplate code from the `App` component.
 4. Think about what components you need to make.
 5. Write the static versions of your components.
 6. Layout the component hierarchy (decide which ones are children of others).
@@ -43,10 +43,6 @@ App
 |  |
 |  |--ClearBurger
 ```
-
-### Notes:
-
-The order of items in the `stack` array will affect the order in which they appear on the page. Make sure you are adding ingredients to the `stack` in the correct way to make each ingredient stack on the previous one.
 
 ### Starter Data:
 
