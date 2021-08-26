@@ -164,6 +164,4 @@ ___
 * Add a form component (simply text input and button) to the ingredient side that lets a user add a new ingredient to the master list of ingredients. If you do this, the ingredients would change over time and would need to live in state.
 * Add the ability to "undo" the last ingredient added (only the last one) by clicking a button that will remove that ingredient. Only that top ingredient should have the button for this showing up. When that ingredient is removed, the next one down should then get the button that allows it to be removed. **HINT**: You probably need to add this button to the top `Ingredient` when you render it in the `BurgerStack` component.
 ___
-## Licensing
-1. All content is licensed under a CC-BY-NC-SA 4.0 license.
-2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
+
