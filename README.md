@@ -6,6 +6,8 @@ Here is a rough wireframe of the general layout:
 
 ![](https://i.imgur.com/beMtwGj.png)
 
+[And here is a working demo deployed on Heroku](https://burger-stacker-706.herokuapp.com)!
+
 ___
 ## User Stories
 
@@ -48,7 +50,7 @@ The order of items in the `stack` array will affect the order in which they appe
 
 ### Starter Data:
 
-Here are some ingredients to get you started. Feel free to change them or add more. (This would be the value you set for `ingredients` when you initialize state):
+Here are some ingredients to get you started. Feel free to change them or add more. You can store this data in a JavaScript file in your `src` directory:
 
 ```js
 [
