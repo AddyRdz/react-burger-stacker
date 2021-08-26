@@ -37,8 +37,6 @@ App
 |
 |--BurgerStack
 |  |--Ingredient(s)
-|  |
-|  |--ClearBurger
 ```
 
 ### Starter Data:
@@ -61,6 +59,95 @@ Here are some ingredients to get you started in the `ingredients.js` file. Feel 
   {name: 'Onion', color: 'lightyellow'}
 ]
 ```
+
+<details>
+  <summary>Help! I don't know where to start!</summary>
+
+  ---
+
+  In App.js, start by setting up the scaffolding for you app.
+  - You'll probably want a component for the Ingredients List and a component for the Burger Stack living inside of your app component.
+  - You'll want to pull in `ingredients` from the `ingredients.js` file.
+
+  ```js
+  import React from 'react';
+  import IngredientsList from './components/IngredientsList';
+  import BurgerStack from './components/BurgerStack';
+  import ingredients from './ingredients';
+  import './App.css';
+
+  class App extends React.Component {
+    state = {
+      addedIngredients: []
+    }
+
+    render() {
+      return (
+        <div className="App">
+          <h1>Burger Stacker</h1>
+            <main className="main">
+              <IngredientsList />
+              <BurgerStack />
+            </main>
+        </div>
+      );
+    }
+  }
+
+  export default App;
+  ```
+
+</details>
+
+<details>
+  <summary>Ok, I'm stuck again...</summary>
+
+  ---
+
+  Start by seeing if a you can get the list of ingredients showing up in the `IngredientsList` component.
+  - Start by passing the ingredients as a prop  from the `App` component to the `IngredientsList` component.
+  - Inside of the `IngredientsList` component loop through those ingredients being pass in to create an array of `<li>` tags.
+
+  Give it a try first and then if you get stuck take a look at this exampmle code.
+  <details>
+    <summary></summary>
+
+    In IngredientsList.js
+    ```
+    function IngredientsList(props) {
+      function renderIngredients() {
+        return props.ingredients.map((ingredient, idx) => {
+          return (
+            <li 
+              key={idx}
+              style={{backgroundColor: ingredient.color}}
+            >
+              {ingredient.name}
+            </li>
+          );
+        });
+      }
+
+      return (
+        <div>
+          <h3>Available Ingredients</h3>
+          <ul>
+            {renderIngredients()}
+          </ul>
+        </div>
+      )
+    }
+
+    export default IngredientsList;
+    ```
+  </details>
+
+  ---
+
+  - Once you have your list of ingredients showing up the next step is to listen for a click on each of the ingredients.
+  - When one of those ingredients is clicked you want to add it to `addedIngredients` in the state of `App` component.
+</details>
+
 ___
 ## BONUSES
 
