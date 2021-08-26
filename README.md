@@ -69,35 +69,43 @@ Here are some ingredients to get you started in the `ingredients.js` file. Feel 
   In App.js, start by setting up the scaffolding for you app.
   - You'll probably want a component for the Ingredients List and a component for the Burger Stack living inside of your app component.
   - You'll want to pull in `ingredients` from the `ingredients.js` file.
+    
+  Give it a try first and then if you get stuck take a look at this exampmle code.
+  
+  <details>
+    <summary></summary>
+    
+      ```js
+    import React from 'react';
+    import IngredientsList from './components/IngredientsList';
+    import BurgerStack from './components/BurgerStack';
+    import ingredients from './ingredients';
+    import './App.css';
 
-  ```js
-  import React from 'react';
-  import IngredientsList from './components/IngredientsList';
-  import BurgerStack from './components/BurgerStack';
-  import ingredients from './ingredients';
-  import './App.css';
+    class App extends React.Component {
+      state = {
+        addedIngredients: []
+      }
 
-  class App extends React.Component {
-    state = {
-      addedIngredients: []
+      render() {
+        return (
+          <div className="App">
+            <h1>Burger Stacker</h1>
+              <main className="main">
+                <IngredientsList />
+                <BurgerStack />
+              </main>
+          </div>
+        );
+      }
     }
 
-    render() {
-      return (
-        <div className="App">
-          <h1>Burger Stacker</h1>
-            <main className="main">
-              <IngredientsList />
-              <BurgerStack />
-            </main>
-        </div>
-      );
-    }
-  }
-
-  export default App;
-  ```
-
+    export default App;
+    ```
+  </details>
+  
+  ---
+  
 </details>
 
 <details>
