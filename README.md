@@ -64,12 +64,6 @@ Here are some ingredients to get you started. Feel free to change them or add mo
 ]
 ```
 
-<details>
-  <summary>Hint:</summary>
-  
-  Start by setting up components for the two main sections of the page, the ingredients list and the burger stack. From there you can start by getting the list of ingredients showing up in your ingredients list component. Loop through the list of ingredients to display a JSX element for each one.
-</details>
-
 ___
 ## BONUSES
 
