@@ -4,7 +4,7 @@ You will be writing an app that simulates the stacking of a burger. You are prov
 
 Here is a rough wireframe of the general layout:
 
-![](https://i.imgur.com/beMtwGj.png)
+![Burger Stacker](./misc/Burger-Stacker.png)
 
 ## [Here is a working demo deployed on Heroku](https://burger-stacker-706.herokuapp.com)
 
@@ -43,7 +43,7 @@ App
 
 ### Starter Data:
 
-Here are some ingredients to get you started. Feel free to change them or add more. You can store this data in a JavaScript file in your `src` directory:
+Here are some ingredients to get you started in the `ingredients.js` file. Feel free to change them or add more.
 
 ```js
 [
@@ -65,7 +65,7 @@ ___
 ## BONUSES
 
 * Each ingredient has an associated color. Use this to give each ingredient a nice background color reminiscent of what it looks like in real life.
-* Add a form component (simply text input and button) to the ingredient side that lets a user add a new ingredient to the master list of ingredients in state.
+* Add a form component (simply text input and button) to the ingredient side that lets a user add a new ingredient to the master list of ingredients. If you do this, the ingredients would change over time and would need to live in state.
 * Add the ability to "undo" the last ingredient added (only the last one) by clicking a button that will remove that ingredient. Only that top ingredient should have the button for this showing up. When that ingredient is removed, the next one down should then get the button that allows it to be removed. **HINT**: You probably need to add this button to the top `Ingredient` when you render it in the `BurgerStack` component.
 ___
 ## Licensing
