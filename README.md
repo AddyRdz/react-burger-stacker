@@ -6,7 +6,7 @@ Here is a rough wireframe of the general layout:
 
 ![](https://i.imgur.com/beMtwGj.png)
 
-[And here is a working demo deployed on Heroku](https://burger-stacker-706.herokuapp.com)!
+## [And here is a working demo deployed on Heroku](https://burger-stacker-706.herokuapp.com)
 
 ___
 ## User Stories
