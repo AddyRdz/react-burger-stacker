@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Burger Stacker
 
-You will be writing an app that simulates the stacking of a burger. You are provided an array of ingredients and you need to make an app the displays all the ingredients on the left side and has an area on the right where the ingredients can be stacked to make a burger.
+You will be writing an app that simulates the stacking of a burger. You are provided an array of ingredients and you need to make an app that displays all the ingredients on the left side and has an area on the right where the ingredients can be stacked to make a burger.
 
 Here is a rough wireframe of the general layout:
 
