@@ -73,7 +73,7 @@ Here are some ingredients to get you started in the `ingredients.js` file. Feel 
   Give it a try first and then if you get stuck take a look at this exampmle code.
   
   <details>
-    <summary></summary>
+    <summary>example code</summary>
     
       ```js
     import React from 'react';
@@ -119,7 +119,7 @@ Here are some ingredients to get you started in the `ingredients.js` file. Feel 
 
   Give it a try first and then if you get stuck take a look at this exampmle code.
   <details>
-    <summary></summary>
+    <summary>example code</summary>
 
     In IngredientsList.js
     ```
