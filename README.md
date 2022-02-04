@@ -1,12 +1,14 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Burger Stacker
 
-You will be writing an app that simulates the stacking of a burger. You are provided an array of ingredients and you need to make an app that displays all the ingredients on the left side and has an area on the right where the ingredients can be stacked to make a burger.
+You will be writing an app that simulates the stacking of a burger. 
 
-Here is a rough wireframe of the general layout:
+The app has a clickable list of ingredients on the left side, which when clicked will add ingredients to the burger to the stacking area on the right side.
+
+Here is a visual of the general layout:
 
 ![Burger Stacker](./misc/Burger-Stacker.png)
 
-## [Here is a working demo deployed on Heroku](https://burger-stacker-706.herokuapp.com)
+### [Check out the demo deployed here on Heroku!](https://burger-stacker-706.herokuapp.com)
 
 ___
 ## User Stories
@@ -64,97 +66,20 @@ Here are some ingredients to get you started in the `ingredients.js` file. Feel 
 <details>
   <summary>Help! I don't know where to start!</summary>
 
-  ---
+  In App.js, start by setting up the scaffolding for your app.
+  - You'll want to stub out components for the Ingredients List and the Burger Stack and nest them within your App component.
 
-  In App.js, start by setting up the scaffolding for you app.
-  - You'll probably want a component for the Ingredients List and a component for the Burger Stack living inside of your app component.
-  - You'll want to pull in `ingredients` from the `ingredients.js` file.
-    
-  Give it a try first and then if you get stuck take a look at this exampmle code.
-  
-  <details>
-    <summary>example code</summary>
-    
-      ```js
-    import React from 'react';
-    import IngredientsList from './components/IngredientsList';
-    import BurgerStack from './components/BurgerStack';
-    import ingredients from './ingredients';
-    import './App.css';
-
-    class App extends React.Component {
-      state = {
-        addedIngredients: []
-      }
-
-      render() {
-        return (
-          <div className="App">
-            <h1>Burger Stacker</h1>
-              <main className="main">
-                <IngredientsList />
-                <BurgerStack />
-              </main>
-          </div>
-        );
-      }
-    }
-
-    export default App;
-    ```
-  </details>
-  
-  ---
-  
 </details>
 
 <details>
-  <summary>Ok, I'm stuck again...</summary>
+  <summary>Help, I'm still stuck!</summary>
 
-  ---
-
-  Start by seeing if a you can get the list of ingredients showing up in the `IngredientsList` component.
-  - Start by passing the ingredients as a prop  from the `App` component to the `IngredientsList` component.
+  Start by seeing if you can get the list of ingredients showing up in the `IngredientsList` component.
+  - Start by passing the ingredients as a prop from the `App` component to the `IngredientsList` component.
   - Inside of the `IngredientsList` component loop through those ingredients being pass in to create an array of `<li>` tags.
-
-  Give it a try first and then if you get stuck take a look at this exampmle code.
-  <details>
-    <summary>example code</summary>
-
-    In IngredientsList.js
-    ```
-    function IngredientsList(props) {
-      function renderIngredients() {
-        return props.ingredients.map((ingredient, idx) => {
-          return (
-            <li 
-              key={idx}
-              style={{backgroundColor: ingredient.color}}
-            >
-              {ingredient.name}
-            </li>
-          );
-        });
-      }
-
-      return (
-        <div>
-          <h3>Available Ingredients</h3>
-          <ul>
-            {renderIngredients()}
-          </ul>
-        </div>
-      )
-    }
-
-    export default IngredientsList;
-    ```
-  </details>
-
-  ---
-
   - Once you have your list of ingredients showing up the next step is to listen for a click on each of the ingredients.
   - When one of those ingredients is clicked you want to add it to `addedIngredients` in the state of `App` component.
+  - You can modify the state of `App` in `IngredientsList` by passing down a `setState` function via props!
 </details>
 
 ___
@@ -164,4 +89,6 @@ ___
 * Add a form component (simply text input and button) to the ingredient side that lets a user add a new ingredient to the master list of ingredients. If you do this, the ingredients would change over time and would need to live in state.
 * Add the ability to "undo" the last ingredient added (only the last one) by clicking a button that will remove that ingredient. Only that top ingredient should have the button for this showing up. When that ingredient is removed, the next one down should then get the button that allows it to be removed. **HINT**: You probably need to add this button to the top `Ingredient` when you render it in the `BurgerStack` component.
 ___
-
+## Licensing
+1. All content is licensed under a CC-BY-NC-SA 4.0 license.
+2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
