@@ -1,3 +1,40 @@
 .App {
   text-align: center;
 }
+
+body {
+  margin: 3vw;
+  background-color: papayawhip;
+}
+
+main {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  max-width: 70%;
+}
+
+main div {
+  min-width: 30%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0.5rem;
+  margin: 3px;
+  border-radius: 15px;
+}
+
+.available-ingredients {
+  cursor: pointer;
+  user-select: none;
+}
+
+.added-ingredients {
+  border-radius: 45px;
+  overflow: hidden;
+}
